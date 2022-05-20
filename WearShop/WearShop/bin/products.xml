@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfClothes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Clothes>
+    <shortName>Джемпер</shortName>
+    <fullName>Мужской джемпер</fullName>
+    <description>Зимний мужской джемпер</description>
+    <imageAdress>C:\ООП\oop2-2\WearShop\WearShop\Pictures\джемпер.jfif</imageAdress>
+    <category>Одежда</category>
+    <rate>6</rate>
+    <cost>-15</cost>
+    <color>Чёрный</color>
+    <size>33</size>
+    <ShortName>Джемпер</ShortName>
+    <FullName>Мужской джемпер</FullName>
+    <Description>Зимний мужской джемпер</Description>
+    <ImageAdress>C:\ООП\oop2-2\WearShop\WearShop\Pictures\джемпер.jfif</ImageAdress>
+    <Category>Одежда</Category>
+    <Rate>6</Rate>
+    <Cost>-15</Cost>
+    <Color>Чёрный</Color>
+    <Size>33</Size>
+  </Clothes>
+  <Clothes>
+    <shortName>Краткое имя товара</shortName>
+    <fullName>Полное имя товара</fullName>
+    <description>Описание</description>
+    <imageAdress>C:\ООП\oop2-2\WearShop\WearShop\Pictures\кроссовки.jfif</imageAdress>
+    <category>Одежда</category>
+    <rate>1</rate>
+    <cost>1</cost>
+    <color>Красный</color>
+    <size>1</size>
+    <ShortName>Краткое имя товара</ShortName>
+    <FullName>Полное имя товара</FullName>
+    <Description>Описание</Description>
+    <ImageAdress>C:\ООП\oop2-2\WearShop\WearShop\Pictures\кроссовки.jfif</ImageAdress>
+    <Category>Одежда</Category>
+    <Rate>1</Rate>
+    <Cost>1</Cost>
+    <Color>Красный</Color>
+    <Size>1</Size>
+  </Clothes>
+</ArrayOfClothes>
