@@ -68,25 +68,26 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="397*"/>
-            <ColumnDefinition Width="162*"/>
-            <ColumnDefinition Width="546*"/>
+            <ColumnDefinition Width="399*"/>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="481*"/>
+            <ColumnDefinition Width="68*"/>
         </Grid.ColumnDefinitions>
 
-        <Rectangle  Margin="0,24,0,0"  Height="72" VerticalAlignment="Top" Grid.ColumnSpan="4"/>
+        <Rectangle  Margin="0,24,0,0"  Height="72" VerticalAlignment="Top" Grid.ColumnSpan="5"/>
 
-        <Rectangle Fill="#FF484848"  Margin="0,22,0,0" Grid.ColumnSpan="4" Height="47" VerticalAlignment="Top"/>
-        <Label x:Name="DIVIDED_LABEL"  Foreground="{DynamicResource Font_on_black}"    Background="{DynamicResource rectangle_n_popup_2}" Content="WEARSHOP" Margin="0,22,0,0"  FontFamily="{DynamicResource main_title}" FontSize="36" Height="47" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Cursor="Hand" VerticalAlignment="Top"  Grid.Column="1" Grid.ColumnSpan="3" Padding="0,0,5,-12"/>
-        <Label x:Name="ClothesTITLE"  Style="{DynamicResource rectangle_n_popup_1}"  FontFamily="{DynamicResource Main_Title}"  Content="{DynamicResource ClothesTitle}" Margin="0,69,0.4,0" VerticalAlignment="Top" Foreground="Snow"  Height="27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MouseUp="Clothes_MouseUp" Grid.ColumnSpan="3"/>
-        <Label x:Name="Shoes"  Style="{DynamicResource rectangle_n_popup_1}"    FontFamily="{DynamicResource Main_Title}" Content="{DynamicResource ShooesTitle}" Margin="0.6,69,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" Height="27" Grid.Column="3" MouseUp="Shoes_MouseUp">
+        <Rectangle Fill="#FF484848"  Margin="0,22,0,0" Grid.ColumnSpan="5" Height="47" VerticalAlignment="Top"/>
+        <Label x:Name="DIVIDED_LABEL"  Foreground="{DynamicResource Font_on_black}"    Background="{DynamicResource rectangle_n_popup_2}" Content="WEARSHOP" Margin="0,22,0,0"  FontFamily="{DynamicResource main_title}" FontSize="36" Height="47" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Cursor="Hand" VerticalAlignment="Top"  Grid.Column="1" Grid.ColumnSpan="4" Padding="0,0,5,-12"/>
+        <Label x:Name="ClothesTITLE"  Style="{DynamicResource rectangle_n_popup_1}"  FontFamily="{DynamicResource Main_Title}"  Content="{DynamicResource ClothesTitle}" Margin="0,69,481,0" VerticalAlignment="Top" Foreground="Snow"  Height="27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MouseUp="Clothes_MouseUp" Grid.ColumnSpan="4"/>
+        <Label x:Name="Shoes"  Style="{DynamicResource rectangle_n_popup_1}"    FontFamily="{DynamicResource Main_Title}" Content="{DynamicResource ShooesTitle}" Margin="1,69,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" Height="27" Grid.Column="3" MouseUp="Shoes_MouseUp" Grid.ColumnSpan="2">
 
         </Label>
 
-        <ListBox x:Name="Clothes_ListBox" Background="{DynamicResource LBack}" Style="{StaticResource ListBoxing}"  Margin="10,101,10,10"  Grid.ColumnSpan="4" ItemsSource="{Binding clothes}" SelectionChanged="Clothes_ListBox_SelectionChanged" Foreground="White" ItemTemplate="{StaticResource listTemplate}">
+        <ListBox x:Name="Clothes_ListBox" Background="{DynamicResource LBack}" Style="{StaticResource ListBoxing}"  Margin="10,101,10,10"  Grid.ColumnSpan="5" ItemsSource="{Binding clothes}" SelectionChanged="Clothes_ListBox_SelectionChanged" Foreground="White" ItemTemplate="{StaticResource listTemplate}">
 
         </ListBox>
 
-        <DockPanel Height="21" LastChildFill="False" Margin="0,1,0,0" VerticalAlignment="Top" Grid.ColumnSpan="4" >
+        <DockPanel Height="21" LastChildFill="False" Margin="0,1,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" >
             <Menu Margin="0,1,0,0.2" Grid.ColumnSpan="2" Width="Auto">
                 <MenuItem x:Name="AddOneBTTN" Header="{DynamicResource AddProduct}" Command="New">
                 </MenuItem>
@@ -113,7 +114,7 @@
         </DockPanel>
 
         <Popup x:Name="ContextPopup"   PlacementTarget ="{Binding ElementName=Clothes_ListBox}" Placement="MousePoint"
-         PlacementRectangle="0,0,30,50"  AllowsTransparency="True" PopupAnimation="Fade"  StaysOpen="False" MouseLeave="ContextPopup_MouseLeave" Margin="636.6,195,-526,68" Grid.Column="3">
+         PlacementRectangle="0,0,30,50"  AllowsTransparency="True" PopupAnimation="Fade"  StaysOpen="False" MouseLeave="ContextPopup_MouseLeave" Margin="156,195,-526,68" Grid.Column="4">
             <Grid Height="243" Background="{DynamicResource rectangle_n_popup_2}" Width="404">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="48"/>
@@ -135,7 +136,7 @@
             </Grid>
         </Popup>
         <Popup x:Name="ChangeValuesPopup"  PlacementTarget ="{Binding ElementName=Clothes_ListBox}" Placement="Mouse"  
-         PlacementRectangle="0,0,30,50"  AllowsTransparency="True" PopupAnimation="Fade"  StaysOpen="True"   Margin="340,164,328,99" Grid.ColumnSpan="4">
+         PlacementRectangle="0,0,30,50"  AllowsTransparency="True" PopupAnimation="Fade"  StaysOpen="True"   Margin="340,164,260,99" Grid.ColumnSpan="4">
             <Grid Height="254"  Background="{DynamicResource rectangle_n_popup_2}" Width="368">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="168*"/>
@@ -172,6 +173,6 @@
 
             </Grid>
         </Popup>
-        <Image Style="{StaticResource MainPicture}" Source="2.png" Margin="0.2,22,0,0" Width="47" Height="47" VerticalAlignment="Top" RenderTransformOrigin="0.996,1.006" Grid.Column="2" HorizontalAlignment="Left"/>
+        <Image Style="{StaticResource MainPicture}" Source="2.png" Margin="399,22,0,0" Width="47" Height="47" VerticalAlignment="Top" RenderTransformOrigin="0.996,1.006" Grid.Column="1" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
